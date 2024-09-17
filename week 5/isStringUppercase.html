@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Character Uppercase Checker</title>
+</head>
+<body>
+    <h1>First Character Uppercase Checker</h1>
+    <p id="result"></p>
+
+    <script>
+        function isFirstCharacterUppercase(str) {
+            return str.length > 0 && str[0] === str[0].toUpperCase();
+        }
+
+        // Example usage
+        const text = "Hello World";
+        const isUppercase = isFirstCharacterUppercase(text);
+
+        // Display the result
+        document.getElementById('result').textContent = `${text} starts with uppercase: ${isUppercase}`;
+    </script>
+</body>
+</html>

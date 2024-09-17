@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Array Example</title>
+</head>
+<body>
+    <h1>Sum Array Example</h1>
+    <p id="result"></p>
+
+    <script>
+        function sumArray(arr) {
+            return arr.reduce((acc, num) => acc + num, 0);
+        }
+
+        // Example usage
+        const numbers = [1, 2, 3, 4, 5];
+        const sum = sumArray(numbers);
+
+        // Display the result
+        document.getElementById('result').textContent = `Sum: ${sum}`;
+    </script>
+</body>
+</html>
